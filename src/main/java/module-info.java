@@ -2,6 +2,7 @@ module com.example.gestorpracticas {
     requires javafx.controls;
     requires javafx.fxml;
     requires java.persistence;
+    requires org.hibernate.orm.core;
 
     opens models;
 

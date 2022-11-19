@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5a56291-72d4-45a9-97cd-a7c01336c2d4" name="Changes" comment="Modificadas dependencias en POM:&#10;- Sustitución Jakarta Persistence API por Javax Persistence.&#10;- Añadida Commons Code. &#10;&#10;Añadido:&#10;- Hibernate.cfg.xml con la configuración de la BBDD y Mappings.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gestorpracticas/AlumnoDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gestorpracticas/ProfesorDAO.java" afterDir="false" />
+    <list default="true" id="d5a56291-72d4-45a9-97cd-a7c01336c2d4" name="Changes" comment="Creados DAO de Profesor y Alumno.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gestorpracticas/AlumnoDAOHib.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/gestorpracticas/HibernateUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gestorpracticas/AlumnoDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gestorpracticas/AlumnoDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -80,6 +82,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Administrator\IdeaProjects\GestorPracticas\src\main\resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.gestorpracticas" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="HelloApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -133,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668846251674</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Creados DAO de Profesor y Alumno.">
+      <created>1668848033486</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1668848033486</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +178,7 @@
     <MESSAGE value="Creación de modelos." />
     <MESSAGE value="Añadidas dependencias en POM:&#10;- Hibernate Core.&#10;- MySQL Connector.&#10;- Jakarta Persistence API." />
     <MESSAGE value="Modificadas dependencias en POM:&#10;- Sustitución Jakarta Persistence API por Javax Persistence.&#10;- Añadida Commons Code. &#10;&#10;Añadido:&#10;- Hibernate.cfg.xml con la configuración de la BBDD y Mappings." />
-    <option name="LAST_COMMIT_MESSAGE" value="Modificadas dependencias en POM:&#10;- Sustitución Jakarta Persistence API por Javax Persistence.&#10;- Añadida Commons Code. &#10;&#10;Añadido:&#10;- Hibernate.cfg.xml con la configuración de la BBDD y Mappings." />
+    <MESSAGE value="Creados DAO de Profesor y Alumno." />
+    <option name="LAST_COMMIT_MESSAGE" value="Creados DAO de Profesor y Alumno." />
   </component>
 </project>
