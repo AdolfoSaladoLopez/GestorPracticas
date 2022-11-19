@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d5a56291-72d4-45a9-97cd-a7c01336c2d4" name="Changes" comment="Añadidas dependencias en POM:&#10;- Hibernate Core.&#10;- MySQL Connector.&#10;- Jakarta Persistence API.">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+    <list default="true" id="d5a56291-72d4-45a9-97cd-a7c01336c2d4" name="Changes" comment="Modificadas dependencias en POM:&#10;- Sustitución Jakarta Persistence API por Javax Persistence.&#10;- Añadida Commons Code. &#10;&#10;Añadido:&#10;- Hibernate.cfg.xml con la configuración de la BBDD y Mappings.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Actividad.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Actividad.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Alumno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Alumno.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Empresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/models/Profesor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Profesor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +111,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1668844240407</updated>
-      <workItem from="1668844241985" duration="1926000" />
+      <workItem from="1668844241985" duration="2495000" />
     </task>
     <task id="LOCAL-00001" summary="Creación de modelos.">
       <created>1668844964477</created>
@@ -125,7 +127,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668845737274</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Modificadas dependencias en POM:&#10;- Sustitución Jakarta Persistence API por Javax Persistence.&#10;- Añadida Commons Code. &#10;&#10;Añadido:&#10;- Hibernate.cfg.xml con la configuración de la BBDD y Mappings.">
+      <created>1668846251674</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668846251674</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +166,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Creación de modelos." />
     <MESSAGE value="Añadidas dependencias en POM:&#10;- Hibernate Core.&#10;- MySQL Connector.&#10;- Jakarta Persistence API." />
-    <option name="LAST_COMMIT_MESSAGE" value="Añadidas dependencias en POM:&#10;- Hibernate Core.&#10;- MySQL Connector.&#10;- Jakarta Persistence API." />
+    <MESSAGE value="Modificadas dependencias en POM:&#10;- Sustitución Jakarta Persistence API por Javax Persistence.&#10;- Añadida Commons Code. &#10;&#10;Añadido:&#10;- Hibernate.cfg.xml con la configuración de la BBDD y Mappings." />
+    <option name="LAST_COMMIT_MESSAGE" value="Modificadas dependencias en POM:&#10;- Sustitución Jakarta Persistence API por Javax Persistence.&#10;- Añadida Commons Code. &#10;&#10;Añadido:&#10;- Hibernate.cfg.xml con la configuración de la BBDD y Mappings." />
   </component>
 </project>

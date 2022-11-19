@@ -1,15 +1,22 @@
 package models;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
+@Entity
+@Table
 public class Alumno implements Serializable {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+
     private String nombre;
     private String apellidos;
     private String password;
-    private String DNI;
+    private String dni;
     private Date nacimiento;
     private String correo;
     private String telefono;
@@ -19,8 +26,15 @@ public class Alumno implements Serializable {
     private Integer realizadasFCT;
     private String observaciones;
 
+    @ManyToOne
+    @JoinColumn(name = "profesor")
     private Profesor profesor;
+
+    @ManyToOne
+    @JoinColumn(name = "empresa")
     private Empresa empresa;
+
+    @OneToMany(mappedBy = "actividad", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<Actividad> actividades;
 
     public Alumno() {
@@ -58,12 +72,12 @@ public class Alumno implements Serializable {
         this.password = password;
     }
 
-    public String getDNI() {
-        return DNI;
+    public String getDni() {
+        return dni;
     }
 
-    public void setDNI(String DNI) {
-        this.DNI = DNI;
+    public void setDni(String dni) {
+        this.dni = dni;
     }
 
     public Date getNacimiento() {
@@ -161,7 +175,7 @@ public class Alumno implements Serializable {
                 ", nombre='" + nombre + '\'' +
                 ", apellidos='" + apellidos + '\'' +
                 ", password='" + password + '\'' +
-                ", DNI='" + DNI + '\'' +
+                ", DNI='" + dni + '\'' +
                 ", nacimiento=" + nacimiento +
                 ", correo='" + correo + '\'' +
                 ", telefono='" + telefono + '\'' +

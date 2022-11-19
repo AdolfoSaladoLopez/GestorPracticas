@@ -2,15 +2,23 @@ package models;
 
 import java.io.Serializable;
 import java.util.Date;
+import javax.persistence.*;
 
+@Entity
+@Table
 public class Actividad implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
+
     private Date fecha;
     private String tipo;
     private Integer horas;
     private String actividad;
     private String observaciones;
 
+    @ManyToOne
+    @JoinColumn(name = "alumno")
     private Alumno alumno;
 
     public Actividad() {
