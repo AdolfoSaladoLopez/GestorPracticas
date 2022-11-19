@@ -1,15 +1,21 @@
 package models;
 
+import javax.persistence.*;
 import java.io.Serializable;
 import java.util.List;
 
+@Entity
+@Table
 public class Profesor implements Serializable {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String nombre;
     private String apellidos;
     private String password;
     private String correo;
 
+    @OneToMany(mappedBy = "alumno", fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<Alumno> alumnos;
 
     public Profesor() {
